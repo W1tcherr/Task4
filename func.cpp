@@ -21,7 +21,7 @@ unsigned int getValue()
 
 unsigned int getSimpleNumber(unsigned int number)
 {
-    for(int i = number; i > 3; i-=2)
+    for(unsigned int i = number; i > 3; i-=2)
     {
         if(i % 3 == 0)
             continue;
@@ -31,7 +31,7 @@ unsigned int getSimpleNumber(unsigned int number)
     return number;
 }
 
-bool searchSimpleNumber(unsigned int number)
+bool searchSimpleNumber(const unsigned int& number)
 {
     unsigned int limit = sqrt(number);
     for(unsigned int i = 5; i <= limit; i+=6)

@@ -6,4 +6,4 @@ unsigned int getValue();
 
 unsigned int getSimpleNumber(unsigned int number);
 
-bool searchSimpleNumber(unsigned int number);
+bool searchSimpleNumber(const unsigned int& number);
