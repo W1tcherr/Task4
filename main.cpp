@@ -7,6 +7,11 @@ int main() {
     if(num == 1 || num == 0)
         std::cout << "\nThere is no prime number less than entered." << std::endl;
     else
-        std::cout << "\nLargest prime less " << num << ": " << getSimpleNumber(num) << std::endl;
+    {
+        if(num % 2 == 0)
+            std::cout << "\nLargest prime less " << num << ": " << getSimpleNumber(num-1) << std::endl;
+        else
+            std::cout << "\nLargest prime less " << num << ": " << getSimpleNumber(num-2) << std::endl;
+    }
     return 0;
 }
